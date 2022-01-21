@@ -60,7 +60,7 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
 
         res.statusCode = 200
         res.setHeader('Content-Type', `image/png`)
-        res.setHeader('Cache-Control', `public, immutable, no-transform, s-maxage=3600, max-age=3600`)
+        res.setHeader('Cache-Control', `public, immutable, no-transform, s-maxage=60, max-age=60`)
         res.end(file)
     } catch (e) {
         res.statusCode = 500
