@@ -27,7 +27,7 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
 
     const height = 400
     const width = 400
-    const padding = 9.5
+    const padding = 10
 
     const html = `
       <html>
