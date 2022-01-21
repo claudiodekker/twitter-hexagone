@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**": {
+      "memory": 1024
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.+)",
+      "dest": "/api"
+    }
+  ]
+}
